@@ -119,21 +119,52 @@ code {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
   height: 100vh;
 }
 
 .personalProjects {
-  height: 100vh;
   width: 100%;
-  z-index: 999999;
+  height: 100%;
 
 }
 
-.personalProjects h1 {
+.textBoxes {
+  height: 15rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 17cm;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+
+}
+
+.textBox1{
+  background-color: #1300ff;
+  width: 10rem;
+}
+
+.textBox2{
+  background-color: #ffbb00;
+  width: 15rem;
+  height: 4rem;
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+.target {
+  margin-top: 10rem;
+  margin-left: 13rem;
+  background-color: red;
+  width: 20rem;
+  height: 7rem;
+}
+
+.projects {
+  background-color: green;
+  width: 20%;
+  margin-left: 40%;
+  text-align: center;
+  margin-top: 6rem;
 }
 
 /* /// Hud2 /// */
