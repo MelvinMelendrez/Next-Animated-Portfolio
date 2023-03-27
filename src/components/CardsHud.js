@@ -16,7 +16,7 @@ const CardsHud = () => {
   return (
     <div className='animatedCards'>
       {projects.map((project) => (
- <Card key={project.title}
+      <Card key={project.title}
        className='projectCard'
  >
  <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>

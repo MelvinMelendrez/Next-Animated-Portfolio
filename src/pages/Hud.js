@@ -1,26 +1,14 @@
 import React from 'react'
 
-import { useRouter } from 'next/router';
-import Spinner from '../components/Spinner'
-import CardsHud from '../components/CardsHud'
-import BigCard from '../components/BigCard'
+import { Hud2 } from '../components/Hud2';
+import Hud1 from '../components/Hud1';
 
 const Hud = () => {
-  const router = useRouter();
 
   return (
-    <>
-        <div className='Hud'>
-              <Spinner/>
-            <button onClick={() => {router.push('/')}}>Home</button>
-        </div>
-
-        <div className='Hud2'>
-
-              <CardsHud/>
-
-              <BigCard/>
-        </div>
+    <>  
+      <Hud1/>
+      <Hud2/>
     </>
     )
 }

@@ -7,15 +7,29 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: black;
+  background-color: white;
   overflow-x: hidden;
+
+  --black: #111;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --accent: var(--black);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* ///// */
 
 .main {
   transition: opacity 0.5s;
@@ -25,9 +39,6 @@ code {
 .fade-out {
   opacity: 0;
 }
-
-
-/* ///// */
 
 .App-header {
   background-color: #646972;
@@ -48,7 +59,7 @@ code {
   gap: 10px;
 }
 
-/* tarjeta chatGPT */
+/* Lobby Cards */
 
 .cardMaster {
   margin: 0 auto;
@@ -98,7 +109,73 @@ code {
   border-top-right-radius: 10px;
 }
 
-/* ///// */
+
+/* /// Hud 1 /// */
+
+.Hud{
+  margin: 0;
+  padding: 0;
+  background-image: url('../../assets/hud.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.personalProjects {
+  height: 100vh;
+  width: 100%;
+  z-index: 999999;
+
+}
+
+.personalProjects h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17cm;
+}
+
+/* /// Hud2 /// */
+
+
+.Hud2{
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* // 3d scroll // */
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  resize: none;
+  z-index: unset;
+}
+
+.base-page-size{
+  display: fixed;
+}
+
+.animatedCards{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 5rem;
+}
+
+/* /// 3D Lobby button /// */
 
 button {
   --pink: #2653db;
@@ -231,175 +308,94 @@ button {
 }
 
 
+/* /// Social buttons /// */
 
-
-/* devanagari */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2)
-    format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8,
-    U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-}
-/* latin-ext */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2)
-    format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-/* devanagari */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2)
-    format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8,
-    U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-}
-/* latin-ext */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2)
-    format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-/* devanagari */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2)
-    format("woff2");
-  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8,
-    U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-}
-/* latin-ext */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2)
-    format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
- 
-
-/* /// Hud /// */
-
-
-
-.Hud{
-  margin: 0;
-  padding: 0;
-  background-image: url('../../assets//hud.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-
-
-
-
-/* // 3d scroll // */
-body {
-  --black: #111;
-  --ash-black: #222;
-  --white: #fafafa;
-  --sky: #00ccff;
-  --green: #22dddd;
-  --blue: #1300ff;
-  --dusk: #6600ff;
-  --purple: #9900ff;
-  --pink: #ff0066;
-  --red: #fe0222;
-  --orange: #fd7702;
-  --yellow: #ffbb00;
-
-  --background: var(--black);
-  --accent: var(--black);
-}
-
-
-.container {
+.action {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  resize: none;
-  z-index: unset;
+  bottom: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  z-index: 1;
 }
 
-.base-page-size{
-  display: fixed;
-}
-
-.animatedCards{
+.action span {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  padding: 5rem;
+  align-items: center;
+  color: #a13dea;
+  font-size: 2em;
+  transition: 0.3s ease-in-out;
 }
 
+.action span {
+ transform: rotate(135deg); 
+}
 
-/* /// Hud2 /// */
+.action ul {
+  position: absolute;
+  bottom: 55px;
+  background: #fff;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
 
+.action.active ul {
+  bottom:65px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
 
-.Hud2{
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fafafa;
-  height: 130vh;
+.action.false ul {
+  bottom:65px;
+  opacity: 1;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.action ul li {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-
+  justify-content: center;
+  padding: 10px 0;
+  transition: 0.3s;
 }
+
+.action ul li:hover {
+  font-weight: 600;
+}
+
+.action ul li:not {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.action ul li img {
+  margin-right: 10px;
+  opacity: 0.2;
+  transform: scale(0.8);
+}
+
+.action ul li:hover img {
+  opacity:0.8;
+}
+.social-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+

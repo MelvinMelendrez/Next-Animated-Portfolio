@@ -2,7 +2,7 @@ import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 
 const BigCard = () => (
     <div>
-<Card css={{ w: "80%", h: "400px", margin: "auto 10%" }}>
+        <Card css={{ w: "80%", h: "400px", margin: "auto 10%" }}>
             <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
             <Col>
                 <Text size={12} weight="bold" transform="uppercase" color="#9E9E9E">
