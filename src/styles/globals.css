@@ -343,15 +343,7 @@ button {
 }
 
 
-.Hud2{
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fafafa;
-  height: 100vh;
-}
+
 
 
 /* // 3d scroll // */
@@ -388,4 +380,26 @@ body {
   display: fixed;
 }
 
+.animatedCards{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 5rem;
+}
 
+
+/* /// Hud2 /// */
+
+
+.Hud2{
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+
+}

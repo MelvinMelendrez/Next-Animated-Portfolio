@@ -1,8 +1,9 @@
 import React from 'react'
 
 import { useRouter } from 'next/router';
-import Spiner from './Spinner'
-
+import Spinner from '../components/Spinner'
+import CardsHud from '../components/CardsHud'
+import BigCard from '../components/BigCard'
 
 const Hud = () => {
   const router = useRouter();
@@ -10,11 +11,15 @@ const Hud = () => {
   return (
     <>
         <div className='Hud'>
-              <Spiner/>
+              <Spinner/>
             <button onClick={() => {router.push('/')}}>Home</button>
         </div>
+
         <div className='Hud2'>
-              
+
+              <CardsHud/>
+
+              <BigCard/>
         </div>
     </>
     )

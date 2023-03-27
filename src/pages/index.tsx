@@ -1,8 +1,6 @@
-import { Inter } from 'next/font/google'
 import Lobby from './Lobby'
 import Spiner from '../components/Spinner'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
