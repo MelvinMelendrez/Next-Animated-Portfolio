@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import Lobby from './Lobby'
-import Spiner from './Spinner'
+import Spiner from '../components/Spinner'
 
 const inter = Inter({ subsets: ['latin'] })
 
