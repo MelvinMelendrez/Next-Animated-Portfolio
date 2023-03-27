@@ -40,7 +40,6 @@ code {
   font-size: calc(10px + 2vmin);
   color: white;
   gap: 2rem;
-  position: relative;
 }
 
 .input{
@@ -343,13 +342,14 @@ button {
   height: 100vh;
 }
 
+
 .Hud2{
   margin: 0;
   padding: 0;
-  background:rgba(20, 64, 22, 0.8);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #fafafa;
   height: 100vh;
 }
 
@@ -385,7 +385,7 @@ body {
 }
 
 .base-page-size{
-  display: ;
+  display: fixed;
 }
 
 

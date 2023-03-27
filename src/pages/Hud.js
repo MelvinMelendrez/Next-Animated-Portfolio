@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useRouter } from 'next/router';
-import Lobby from './Lobby2'
+import Spiner from './Spinner'
 
 
 const Hud = () => {
@@ -10,8 +10,8 @@ const Hud = () => {
   return (
     <>
         <div className='Hud'>
-              <Lobby/>
             <button onClick={() => {router.push('/')}}>Home</button>
+              <Spiner/>
         </div>
         <div className='Hud2'>
               
