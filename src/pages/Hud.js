@@ -10,8 +10,8 @@ const Hud = () => {
   return (
     <>
         <div className='Hud'>
-            <button onClick={() => {router.push('/')}}>Home</button>
               <Spiner/>
+            <button onClick={() => {router.push('/')}}>Home</button>
         </div>
         <div className='Hud2'>
               
