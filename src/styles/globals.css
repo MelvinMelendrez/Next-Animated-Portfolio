@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: white;
   overflow-x: hidden;
   background-color: #000000;
 
@@ -27,11 +26,6 @@ body {
   --accent: var(--black);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .main {
   transition: opacity 0.5s;
   opacity: 1;
@@ -41,8 +35,17 @@ code {
   opacity: 0;
 }
 
+
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Lobby  */
+
 .App-header {
-  background-color: #646972;
+  background-image: url('../../assets/galaxyBG2.jpeg');
   width: 100%;
   height: 100vh;
   display: flex;
@@ -52,15 +55,12 @@ code {
   font-size: calc(10px + 2vmin);
   color: white;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-.input{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* Lobby Cards */
 
 .cardMaster {
   margin: 0 auto;
@@ -168,7 +168,7 @@ code {
 .cardHud1{
   border-radius: 80px;
   padding-bottom: 10px;
-  border: red 5px solid;
+  border: red 3px solid;
 }
 
 .targetImg {
@@ -278,11 +278,25 @@ code {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #fafafa;
-  height: 130vh;
+  background-color: #443939;
+  height: 55vh;
   display: flex;
   flex-direction: column;
+}
 
+.animatedCards{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.BigCard{
+  width: 80%;
+  height: 400px;
+  margin: auto 10%;
 }
 
 /* // 3d scroll // */
@@ -299,13 +313,6 @@ code {
 
 .base-page-size{
   display: fixed;
-}
-
-.animatedCards{
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  padding: 5rem;
 }
 
 /* /// 3D Lobby button /// */

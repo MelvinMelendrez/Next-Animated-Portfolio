@@ -76,7 +76,7 @@ export default function Button3D() {
           variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
           className="label"
         >
-          play
+          Play
         </motion.div>
       </motion.button>
     </MotionConfig>

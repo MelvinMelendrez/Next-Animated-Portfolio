@@ -1,5 +1,5 @@
 import Lobby from './Lobby'
-import Spiner from '../components/Spinner'
+import Spiner from '../components/Spinner2'
 
 
 export default function Home() {
