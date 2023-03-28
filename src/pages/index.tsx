@@ -8,6 +8,7 @@ export default function Home() {
       <div className='App-header'>
         <Lobby/>
         <Spiner/>
+        
       </div>
     </>  
     )

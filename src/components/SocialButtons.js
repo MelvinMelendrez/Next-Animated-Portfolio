@@ -27,8 +27,14 @@ const SocialButtons = () => {
           <Image src='https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg' alt='LinkedIn' width={32} height={32} />
           LinkedIn
         </li>
-        <li>github</li>
-        <li>instagram</li>
+        <li> 
+          <Image src='https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg' alt='LinkedIn' width={32} height={32} />
+          github</li>
+        <li>
+        <Image src='https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg' alt='LinkedIn' width={32} height={32} />
+          instagram
+        </li>
+
       </ul>
     </div>
   );
