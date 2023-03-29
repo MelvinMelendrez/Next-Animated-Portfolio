@@ -2,15 +2,14 @@ import React from 'react'
 
 import { Card, Col, Text } from "@nextui-org/react";
 
-
 const CardsHud = () => {
 
   const projects = [
-    { title: '1', image:'',  },
-    { title: '2', image:'',  },
-    { title: '3', image:'',  },
-    { title: '4', image:'',  },
-    { title: '5', image:'',  },
+    { title: 'Auth Map', subtitle:'Angular', image: 'https://cdn.sanity.io/images/ohx8wpby/production/223b4126281cddbe28215abe090e5931903adfb9-1437x1503.jpg'},
+    { title: 'Healty blog', subtitle:'Next', image:'https://cdn.sanity.io/images/ohx8wpby/production/7f7a2f05037be61fb6538c0b96769b70fec544ed-1439x759.png'},
+    { title: 'Melvin portfolio', subtitle:'React', image:'https://cdn.sanity.io/images/ohx8wpby/production/17668c11441bfd3db1b439f4f409abcd078bc015-1440x763.png'},
+    { title: 'Go Travel', subtitle:'React Native', image:'https://cdn.sanity.io/images/ohx8wpby/production/19fdc2bb0aa3b0a1faf5646cb8b7d2c8dde2ede9-1440x1520.jpg'},
+    { title: 'Animated portfolio', subtitle:'Next', image:'https://cdn.sanity.io/images/ohx8wpby/production/19fdc2bb0aa3b0a1faf5646cb8b7d2c8dde2ede9-1440x1520.jpg'},
   ]
 
   return (
@@ -21,18 +20,19 @@ const CardsHud = () => {
       >
         <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
 
-          <Col>
-            <Text size={12} weight="bold" transform="uppercase" color="#ffffffAA">
-              What to watch
+          <Col className='titlecard'>
+            <Text size={9} weight="bold" transform="uppercase" color="#ffffffAA" className='cardSubtitle'>
+            {project.subtitle}
             </Text>
-            <Text h4 color="white">
-              Stream the Acme event
+            <Text h4 color="white" className='cardTitle'>
+              {project.title}
             </Text>
           </Col>
+
         </Card.Header>
         
         <Card.Image
-          src="https://nextui.org/images/card-example-4.jpeg"
+          src= {project.image}
           objectFit="cover"
           width="100%"
           height={340}

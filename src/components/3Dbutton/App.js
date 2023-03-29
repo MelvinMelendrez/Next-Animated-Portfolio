@@ -27,7 +27,7 @@ export default function Button3D() {
     <MotionConfig transition={transition}>
       <motion.button
         ref={ref}
-        onClick={() => {router.push('/Hud')}}  //// this is the line that I added
+        onClick={() => {router.push('/Hud')}} 
         initial={false}
         animate={isHover ? "hover" : "rest"}
         whileTap="press"

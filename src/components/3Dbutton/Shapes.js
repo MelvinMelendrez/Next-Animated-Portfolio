@@ -40,13 +40,12 @@ export function Shapes({ isHover, isPress, mouseX, mouseY }) {
 export function Lights() {
   return (
     <>
-<spotLight color="#0c0c0c" position={[-10, -10, -10]} intensity={0.2} />
-<spotLight color="#0c0c0c" position={[-10, 0, 15]} intensity={0.8} />
-<spotLight color="#2288ff" position={[-5, 20, 2]} intensity={0.5} />
-<spotLight color="#e3006a" position={[15, 10, -2]} intensity={2} />
-<spotLight color="#e3006a" position={[15, 10, 5]} intensity={1} />
-<spotLight color="#6e00b3" position={[5, -10, 5]} intensity={0.8} />
-
+      <spotLight color="#0c0c0c" position={[-10, -10, -10]} intensity={0.1} />
+      <spotLight color="#0c0c0c" position={[-10, 0, 15]} intensity={0.1} />
+      <spotLight color="#2288ff" position={[-5, 20, 2]} intensity={0.1} />
+      <spotLight color="#00ff00" position={[15, 10, -2]} intensity={0.8} />
+      <spotLight color="#00ff00" position={[15, 10, 5]} intensity={0.5} />
+      <spotLight color="#1a1a1a" position={[5, -10, 5]} intensity={0.1} />
     </>
   );
 }

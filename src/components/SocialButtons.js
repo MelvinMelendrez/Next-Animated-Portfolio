@@ -19,24 +19,24 @@ const SocialButtons = () => {
     setTimeoutId(newTimeoutId);
   }
 
-  return (
-    <div className='action' onClick={handleActionClick}>
-      <Image src='/chatMe.png' alt='LinkedIn' width={50} height={50} />
-      <ul>
-        <li>
-          <Image src='https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg' alt='LinkedIn' width={32} height={32} />
-          LinkedIn
-        </li>
-        <li> 
-          <Image src='https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg' alt='LinkedIn' width={32} height={32} />
-          github</li>
-        <li>
-        <Image src='https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg' alt='LinkedIn' width={32} height={32} />
-          instagram
-        </li>
+  const socialNetworks = [
+    { name: 'LinkedIn', icon: 'https://cdn-icons-png.flaticon.com/512/174/174857.png', link:'' },
+    { name: 'Github', icon: 'https://cdn-icons-png.flaticon.com/512/733/733609.png', link:'' },
+    { name: 'Instagram', icon: 'https://cdn-icons-png.flaticon.com/512/174/174855.png', link:'' },
+  ]
 
-      </ul>
-    </div>
+  return (
+      <div className='action' onClick={handleActionClick}>
+        <Image src='/chatMe.png' alt='ChatMe' width={50} height={50} />
+        <ul className='socialImg'>
+          {socialNetworks.map((socialNetwork) => (
+            <li key={socialNetwork.name}>
+              <Image src={socialNetwork.icon} alt={socialNetwork.name} width={32} height={32} />
+              {socialNetwork.name}
+            </li>
+          ))}
+        </ul>
+      </div>
   );
 };
 

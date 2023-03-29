@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
-import { BsSortDownAlt } from 'react-icons/bs';
 
-
-function App() {
+function ProjectsIcon() {
   useEffect(() => {
     const handleScrollDown = () => {
       window.scrollTo({
@@ -17,17 +15,11 @@ function App() {
     return () => {
       projectsDiv.removeEventListener('click', handleScrollDown);
     };
-  }, []); 
+  }, []);
 
   return (
-    <div>
-      <div className='projects'>
-        <span className='projectSpan'>Projects</span>
-        <BsSortDownAlt className='projectIcon' />
-      </div>
-
-    </div>
+    <span className='projects'>Projects</span>
   );
 }
 
-export default App;
+export default ProjectsIcon;
