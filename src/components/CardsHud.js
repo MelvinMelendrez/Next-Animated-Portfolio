@@ -69,11 +69,11 @@ const CardsHud = () => {
             <div className="icons">
 
               <a href={project.visit} target="_blank">
-              <i className="far fa-eye"></i>
+                <i className="far fa-eye"></i>
               </a>
 
               <a href={project.gitHub} target="_blank">
-              <i className="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
 
             </div>

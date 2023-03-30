@@ -7,6 +7,7 @@ import TitleName from './titleName';
 import HudBox2 from './HudBox2';
 import ProjectIcon from './ProjectsIcon';
 
+import { Button, Grid } from "@nextui-org/react";
 
 const Hud1 = () => {
   const router = useRouter();
@@ -14,10 +15,13 @@ const Hud1 = () => {
   return (
     <div className='Hud'>
 
-        <button onClick={() => { router.push('/') }}>Lobby</button>
+        <div className=''>
+                <Button light ghost color="primary" auto  onClick={() => { router.push('/') }} className='lobbyButton' >
+                    <h2>Lobby</h2>
+                </Button>
+        </div>
         
         <div className='imageStatus'>
-            
              <motion.div
              className='profileImage' 
              initial={{ clipPath: 'inset(0 100% 0 0)', opacity: 0 }}
@@ -31,7 +35,6 @@ const Hud1 = () => {
             <div className='statusIcons'>
                 <HudBox2/>
             </div>
-
         </div>
 
         <div className='titleNameTarget'>
@@ -56,7 +59,7 @@ const Hud1 = () => {
             </motion.div>
         </div>
 
-      </div>
+    </div>
   )
 }
 

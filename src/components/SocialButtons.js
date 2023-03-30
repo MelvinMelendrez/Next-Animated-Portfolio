@@ -20,9 +20,9 @@ const SocialButtons = () => {
   }
 
   const socialNetworks = [
-    { name: 'LinkedIn', icon: 'https://cdn-icons-png.flaticon.com/512/174/174857.png', link:'' },
-    { name: 'Github', icon: 'https://cdn-icons-png.flaticon.com/512/733/733609.png', link:'' },
-    { name: 'Instagram', icon: 'https://cdn-icons-png.flaticon.com/512/174/174855.png', link:'' },
+    { name: 'LinkedIn', icon: 'https://cdn-icons-png.flaticon.com/512/174/174857.png', link:'https://www.linkedin.com/in/melvinmelendrez/' },
+    { name: 'Github', icon: 'https://cdn-icons-png.flaticon.com/512/733/733609.png', link:'https://github.com/MelvinMelendrez' },
+    { name: 'Instagram', icon: 'https://cdn-icons-png.flaticon.com/512/174/174855.png', link:'https://www.instagram.com/melvinmelendrez' },
   ]
 
   return (
@@ -31,8 +31,10 @@ const SocialButtons = () => {
         <ul className='socialImg'>
           {socialNetworks.map((socialNetwork) => (
             <li key={socialNetwork.name}>
-              <Image src={socialNetwork.icon} alt={socialNetwork.name} width={32} height={32} />
-              {socialNetwork.name}
+              <a href={socialNetwork.link} target="_blank" style={{ textDecoration: 'none' }}>
+                <Image src={socialNetwork.icon} alt={socialNetwork.name} width={32} height={32} />
+                {socialNetwork.name}
+              </a>
             </li>
           ))}
         </ul>

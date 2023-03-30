@@ -93,13 +93,11 @@ body {
   margin-top: 4rem;
 }
 
-
-
 .profileImage {
   border-radius: 30px;
   height: 41mm;
   padding-top: 1mm;
-  border: red 1.5mm solid;
+  border: red 1mm solid;
   animation: border-blink 2s infinite;
   border-bottom: 0;
   border-top: 0;
@@ -162,7 +160,7 @@ body {
 }
 
 
-/* //// */
+/* // Hud 1 // */
 
 
 .cardHud1{
@@ -219,7 +217,6 @@ body {
 
 .target span{
   font-size: 8mm;
-
 }
 
 .projects {
@@ -256,6 +253,15 @@ body {
 
 .iconsHu1{
   display: flex;
+}
+
+.lobbyButton{
+  bottom: -1cm;
+  right: -1cm;
+  font-size: 7mm;
+}
+
+.buttonText{
 }
 
 /* /// Hud2 /// */
@@ -462,7 +468,6 @@ button {
   transition: 0.3s ease-in-out;
 }
 
-
 .action ul {
   position: absolute;
   bottom: 55px;
@@ -527,8 +532,6 @@ button {
 
 /* /// animated card  /// */
 
-
-
 .animatedCards{
   display: flex;
   justify-content: center;
@@ -564,7 +567,7 @@ button {
     border-color: rgb(0, 0, 0);
   }
   100% {
-    border-color: rgb(32, 108, 13);
+    border-color: rgba(32, 108, 13, 0.385);
   }
 }
 
@@ -600,7 +603,6 @@ button {
 .cardProjects:hover .icons {
   display: block;
   display: flex;
-
 }
 
 .icons a {

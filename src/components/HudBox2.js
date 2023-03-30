@@ -18,8 +18,8 @@ const HudBox2 = () => {
         animate={{ clipPath: 'inset(0 0% 0 0)', opacity: 1 }}
         transition={{ duration: .1, delay: 1.5}}
         >
-          <Loading color="error" textColor="error">
-              Low HP
+          <Loading color="primary" textColor="primary">
+              Full Hp
           </Loading>
       </motion.div>
 
