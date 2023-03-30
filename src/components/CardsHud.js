@@ -77,7 +77,7 @@ const CardsHud = () => {
               </a>
 
               <a href={project.gitHub} target="_blank" className='iconCard'>
-                <i className="">
+                <i>
                   <AiFillGithub />
                 </i>
               </a>

@@ -171,11 +171,6 @@ body {
   text-align: center;
 }
 
-.iconCard{
-  text-align: center;
-  height: 1mm;
-}
-
 .icons {
   color: transparent;
   display: flex;  
