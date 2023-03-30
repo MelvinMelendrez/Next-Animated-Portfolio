@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye, faGithub } from '@fortawesome/free-regular-svg-icons'
 
 const CardsHud = () => {
   const projects = [
@@ -72,11 +70,11 @@ const CardsHud = () => {
             <div className="icons">
 
               <a href={project.visit} target="_blank">
-                <FontAwesomeIcon icon={faEye} />
+                <i class="fa fa-eye" aria-hidden="true"></i>
               </a>
 
               <a href={project.gitHub} target="_blank">
-                <FontAwesomeIcon icon={faGithub} />
+              <i class="fab fa-github"></i>
               </a>
 
             </div>

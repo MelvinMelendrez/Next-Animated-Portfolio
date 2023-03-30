@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@nextui-org/react": "^1.0.0-beta.12",
     "@react-three/fiber": "^8.12.0",
     "@types/node": "18.15.10",
