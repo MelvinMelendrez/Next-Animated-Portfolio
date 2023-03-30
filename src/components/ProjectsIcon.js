@@ -18,7 +18,7 @@ function ProjectsIcon() {
   }, []);
 
   return (
-    <span className='projects'>Projects</span>
+    <span className='projects'>( Projects )</span>
   );
 }
 

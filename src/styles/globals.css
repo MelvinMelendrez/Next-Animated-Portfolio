@@ -8,7 +8,7 @@ body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
 
   --black: #111;
   --ash-black: #222;
@@ -73,61 +73,12 @@ body {
   background-repeat: no-repeat;
 }
 
-.cardMaster {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  z-index: 3;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 230px;
-  margin: 10px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.8);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  color: black;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-.card h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 20px 0 10px 0;
-}
-
-.card p {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-
 /* /// Hud 1 /// */
 
 .Hud{
   margin: 0;
   padding: 0;
-  background-image: url('../../assets/hud.jpeg');
+  background-image: url('https://cdn.sanity.io/images/ohx8wpby/production/ca922061baf36b68865374f90e420a912e9136a8-1215x778.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -145,7 +96,7 @@ body {
 
 
 .profileImage {
-  border-radius: 40px;
+  border-radius: 30px;
   height: 41mm;
   padding-top: 1mm;
   border: red 1.5mm solid;
@@ -334,44 +285,7 @@ body {
   backdrop-filter: blur(1px);
 }
 
-.animatedCards{
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  padding: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  z-index: 3;
-}
 
-.cardSubtitle{
-  background-color: #000000;
-  display: inline-block;
-  height: auto;
-  width: auto;
-  padding: 5px; 
-  border-radius: 5rem;
-  margin-right: auto;
-}
-
-.cardTitle{
-  background-color: #000000;
-  display: inline-block;
-  height: auto;
-  width: auto;
-  padding: 5px; 
-  border-radius: 5rem;
-  margin-right: auto;
-}
-
-.titlecard {
-  display: inline-block;
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-flow: column ;
-  margin-top: 1rem;
-}
 
 /* // 3d scroll // */
 
@@ -610,4 +524,149 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+/* /// animated card  /// */
+
+
+
+.animatedCards{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  z-index: 3;
+}
+
+.cardProjects {
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+  border: 5px solid red;
+  animation: borde 2s infinite;
+  border-width: 80%; 
+  width: 15%;
+  height: 19rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  border-radius: 10px;
+  position: relative; 
+}
+
+@keyframes borde {
+  0% {
+    border-color: rgb(251, 255, 0);
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+  100% {
+    border-color: rgb(32, 108, 13);
+  }
+}
+
+.cardProjects:hover {
+  background-color: #000000b9;
+}
+
+.cardProjects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.436);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardProjects:hover::before {
+  opacity: 1;
+}
+
+.cardProjects .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  display: flex;
+}
+
+.cardProjects:hover .icons {
+  display: block;
+  display: flex;
+
+}
+
+.icons a {
+  color: transparent;
+}
+
+.icons i {
+  font-size: 24px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid transparent;
+}
+
+.cardProjects .icons i:hover {
+  opacity: 1;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  border-color: #2E7D32;
+}
+
+.icons {
+  color: transparent;
+  display: flex;  
+}
+
+.cardProjects:hover .icons {
+  opacity: 1;
+}
+
+.cardProjects:hover .icons i {
+  color: white; 
+  background-color: #000;
+}
+
+.content2{
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  display: inline-block;
+  margin-left: 1rem;
+
+}
+
+.projectTitle {
+  border: #000 1px solid;
+  border-radius: 100px;
+  background-color: #000;
+  color: white;
+  padding: 1mm;
+  text-align: center;
+
+}
+
+.projectSubTitle {
+  border: #000 1px solid;
+  border-radius: 100px;
+  background-color: #000;
+  margin-top: 6mm;
+  color: white;
+  text-align: center;
+  padding: 1mm;
+  font-size: 3mm;
+}
+
 

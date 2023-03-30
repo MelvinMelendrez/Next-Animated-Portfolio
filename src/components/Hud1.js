@@ -49,7 +49,7 @@ const Hud1 = () => {
             <motion.div
                         initial={{ clipPath: 'inset(0 100% 0 0)', opacity: 0 }}
                         animate={{ clipPath: 'inset(0 0% 0 0)', opacity: 1 }}
-                        transition={{ duration: .2, delay: 2 }}
+                        transition={{ duration: .2, delay: 2.5 }}
                         style={{ zIndex: 3 }}
             >
                 <ProjectIcon />
