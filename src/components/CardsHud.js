@@ -27,7 +27,7 @@ const CardsHud = () => {
         'https://cdn.sanity.io/images/ohx8wpby/production/19fdc2bb0aa3b0a1faf5646cb8b7d2c8dde2ede9-1440x1520.jpg',
       color: '#9C27B0',
       gitHub: 'https://github.com/MelvinMelendrez/Next-AnimatedPortfolio.git',
-      visit: 'https://animated-portfolio-js.vercel.app/'
+      visit: 'https://next-animated-portfolio.vercel.app/'
     },
     {
       title: 'Melvin portfolio',
