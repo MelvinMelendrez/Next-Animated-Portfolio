@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
 
-
 import '../styles/globals.css'
 
 import { useRouter } from "next/router";
@@ -34,6 +33,7 @@ export default function App({ Component, pageProps }) {
         }}
         className="base-page-size"
       >
+          <title>Animated Portfolio</title>
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>

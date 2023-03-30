@@ -27,6 +27,7 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.6",
     "@types/three": "^0.149.0",
     "webpack": "^5.76.3",
     "webpack-cli": "^5.0.1"

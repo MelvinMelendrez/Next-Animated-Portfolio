@@ -1419,6 +1419,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-helmet@npm:^6.1.6":
+  version: 6.1.6
+  resolution: "@types/react-helmet@npm:6.1.6"
+  dependencies:
+    "@types/react": "*"
+  checksum: 81560c56bfe854b6a43aee31360862588ac875d1177b975da5ce049ac9aa2f7c98dcde65d4397bfaa04e468f40cf3ab2975a2ef966a69d64a60493422898698d
+  languageName: node
+  linkType: hard
+
 "@types/react-reconciler@npm:^0.26.7":
   version: 0.26.7
   resolution: "@types/react-reconciler@npm:0.26.7"
@@ -1755,6 +1764,7 @@ __metadata:
     "@types/node": 18.15.10
     "@types/react": 18.0.29
     "@types/react-dom": 18.0.11
+    "@types/react-helmet": ^6.1.6
     "@types/three": ^0.149.0
     "@use-gesture/react": ^10.2.24
     eslint: 8.36.0
