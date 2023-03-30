@@ -73,6 +73,151 @@ body {
   background-repeat: no-repeat;
 }
 
+
+/* /// animated card  /// */
+
+.animatedCards{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  z-index: 3;
+}
+
+.cardProjects {
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+  border: 5px solid red;
+  animation: borde 2s infinite;
+  border-width: 80%; 
+  width: 15%;
+  height: 19rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  border-radius: 10px;
+  position: relative; 
+}
+
+@keyframes borde {
+  0% {
+    border-color: rgb(251, 255, 0);
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+  100% {
+    border-color: rgba(32, 108, 13, 0.385);
+  }
+}
+
+.cardProjects:hover {
+  background-color: #000000b9;
+}
+
+.cardProjects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.436);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardProjects:hover::before {
+  opacity: 1;
+}
+
+.cardProjects .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  display: flex;
+}
+
+.cardProjects:hover .icons {
+  display: block;
+  display: flex;
+}
+
+.icons a {
+  color: transparent;
+}
+
+.icons i {
+  font-size: 24px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid transparent;
+}
+
+.cardProjects .icons i:hover {
+  opacity: 1;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  border-color: #2E7D32;
+}
+
+.icons {
+  color: transparent;
+  display: flex;  
+}
+
+.cardProjects:hover .icons {
+  opacity: 1;
+}
+
+.cardProjects:hover .icons i {
+  color: white; 
+  background-color: #000;
+}
+
+.content2{
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  display: inline-block;
+  margin-left: 1rem;
+
+}
+
+.projectTitle {
+  border: #000 1px solid;
+  border-radius: 100px;
+  background-color: #000;
+  color: white;
+  padding: 1mm;
+  text-align: center;
+
+}
+
+.projectSubTitle {
+  border: #000 1px solid;
+  border-radius: 100px;
+  background-color: #000;
+  margin-top: 6mm;
+  color: white;
+  text-align: center;
+  padding: 1mm;
+  font-size: 3mm;
+}
+
+
+
+
 /* /// Hud 1 /// */
 
 .Hud{
@@ -527,146 +672,3 @@ button {
   align-items: center;
   justify-content: center;
 }
-
-/* /// animated card  /// */
-
-.animatedCards{
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  padding: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  z-index: 3;
-}
-
-.cardProjects {
-  background-position: center;
-  background-size: cover;
-  background-clip: content-box;
-  border: 5px solid red;
-  animation: borde 2s infinite;
-  border-width: 80%; 
-  width: 15%;
-  height: 19rem;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-  position: relative;
-  border-radius: 10px;
-  position: relative; 
-}
-
-@keyframes borde {
-  0% {
-    border-color: rgb(251, 255, 0);
-  }
-  50% {
-    border-color: rgb(0, 0, 0);
-  }
-  100% {
-    border-color: rgba(32, 108, 13, 0.385);
-  }
-}
-
-.cardProjects:hover {
-  background-color: #000000b9;
-}
-
-.cardProjects::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.436);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.cardProjects:hover::before {
-  opacity: 1;
-}
-
-.cardProjects .icons {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  display: flex;
-}
-
-.cardProjects:hover .icons {
-  display: block;
-  display: flex;
-}
-
-.icons a {
-  color: transparent;
-}
-
-.icons i {
-  font-size: 24px;
-  margin-right: 10px;
-  opacity: 0.5;
-  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
-  border-radius: 50%;
-  padding: 8px;
-  border: 2px solid transparent;
-}
-
-.cardProjects .icons i:hover {
-  opacity: 1;
-  background-color: #000;
-  color: #fff;
-  border-radius: 30px;
-  border-color: #2E7D32;
-}
-
-.icons {
-  color: transparent;
-  display: flex;  
-}
-
-.cardProjects:hover .icons {
-  opacity: 1;
-}
-
-.cardProjects:hover .icons i {
-  color: white; 
-  background-color: #000;
-}
-
-.content2{
-  margin-top: 2rem;
-  display: flex;
-  flex-flow: column wrap;
-  display: inline-block;
-  margin-left: 1rem;
-
-}
-
-.projectTitle {
-  border: #000 1px solid;
-  border-radius: 100px;
-  background-color: #000;
-  color: white;
-  padding: 1mm;
-  text-align: center;
-
-}
-
-.projectSubTitle {
-  border: #000 1px solid;
-  border-radius: 100px;
-  background-color: #000;
-  margin-top: 6mm;
-  color: white;
-  text-align: center;
-  padding: 1mm;
-  font-size: 3mm;
-}
-
-
