@@ -88,39 +88,3 @@ const CardsHud = () => {
 export default CardsHud;
 
 
-
-    // <div className="animatedCards">
-    //   {projects.map((project) => (
-      
-    //     <div
-    //       key={project.title}
-    //       className="projectCard"
-    //       style={{ backgroundImage: `url(${project.image})`, backgroundColor: project.color }}
-    //       >
-
-    //       <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
-    //         <Col className="titlecard">
-    //           <Text
-    //             size={9}
-    //             weight="bold"
-    //             transform="uppercase"
-    //             color="#ffffffAA"
-    //             className="cardSubtitle"
-    //             >
-    //             {project.subtitle}
-    //           </Text>
-    //           <Text h4 color="white" className="cardTitle">
-    //             {project.title}
-    //           </Text>
-    //         </Col>
-    //       </Card.Header>
-
-    //       <div className="icons">
-    //         <i class="fab fa-github"></i>
-    //         <i class="far fa-eye"></i>
-    //       </div>
-
-    //     </div>
-      
-    //   ))}
-    // </div>
