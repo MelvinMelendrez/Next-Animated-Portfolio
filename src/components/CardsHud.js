@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 
 const CardsHud = () => {
   const projects = [
@@ -70,11 +71,15 @@ const CardsHud = () => {
             <div className="icons">
 
               <a href={project.visit} target="_blank">
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i>
+                  <AiFillEye />
+                </i>
               </a>
 
               <a href={project.gitHub} target="_blank">
-              <i class="fab fa-github"></i>
+                <i>
+                  <AiFillGithub />
+                </i>
               </a>
 
             </div>
