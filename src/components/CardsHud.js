@@ -70,14 +70,14 @@ const CardsHud = () => {
 
             <div className="icons">
 
-              <a href={project.visit} target="_blank">
+              <a href={project.visit} target="_blank" className='iconCard'>
                 <i>
                   <AiFillEye />
                 </i>
               </a>
 
-              <a href={project.gitHub} target="_blank">
-                <i>
+              <a href={project.gitHub} target="_blank" className='iconCard'>
+                <i className="">
                   <AiFillGithub />
                 </i>
               </a>
