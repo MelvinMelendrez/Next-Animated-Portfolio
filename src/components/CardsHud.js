@@ -47,7 +47,7 @@ const CardsHud = () => {
         'https://cdn.sanity.io/images/ohx8wpby/production/782022d291278a6c2de1ef15d35df30aaef7a5dc-370x1027.jpg',
       color: '#4CAF50',
       gitHub: 'https://github.com/MelvinMelendrez/Go-Travel.git',
-      visit:''
+      visit:'https://cdn.sanity.io/images/ohx8wpby/production/9b2898a654a087fa109ff6ccbf6294de27c53636-702x1024.jpg'
     }
   ];
 
