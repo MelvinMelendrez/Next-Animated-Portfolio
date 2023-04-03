@@ -160,13 +160,14 @@ body {
   border-radius: 50%;
   padding: 8px;
   border: 2px solid transparent;
+  display: flex;
+  
 }
 
 .cardProjects .icons i:hover {
   opacity: 1;
   background-color: #000;
   color: #fff;
-  border-radius: 50px;
   border-color: #2E7D32;
   text-align: center;
 }
