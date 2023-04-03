@@ -44,7 +44,7 @@ const CardsHud = () => {
       title: 'Go Travel',
       subtitle: 'React Native',
       image:
-        'https://cdn.sanity.io/images/ohx8wpby/production/19fdc2bb0aa3b0a1faf5646cb8b7d2c8dde2ede9-1440x1520.jpg',
+        'https://cdn.sanity.io/images/ohx8wpby/production/782022d291278a6c2de1ef15d35df30aaef7a5dc-370x1027.jpg',
       color: '#4CAF50',
       gitHub: 'https://github.com/MelvinMelendrez/Go-Travel.git',
       visit:''
