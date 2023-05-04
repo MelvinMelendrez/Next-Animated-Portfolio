@@ -35,7 +35,7 @@ const CardsHud = () => {
       title: 'Melvin portfolio',
       subtitle: 'React',
       image:
-        'https://cdn.sanity.io/images/ohx8wpby/production/17668c11441bfd3db1b439f4f409abcd078bc015-1440x763.png',
+        'https://cdn.sanity.io/images/ohx8wpby/production/aaca540e0fdf00ee58bb06e4c4b26d018d6e3b17-1132x787.png',
       color: '#F44336',
       gitHub: 'https://github.com/MelvinMelendrez/portfolio',
       visit: 'https://portfolio-git-main-krispis0.vercel.app/'
