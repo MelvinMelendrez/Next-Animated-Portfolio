@@ -11,7 +11,6 @@ const Hud = () => {
   return (
     <>  
      <div className='spinner'>
-      <Spinner/>
      </div>
       <Hud1/>
       <Hud2/>
