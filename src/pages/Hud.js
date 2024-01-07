@@ -8,7 +8,7 @@ import SocialButtons from '../components/SocialButtons'
 const Hud = () => {
 
   return (
-    <>  
+    <>
       <Hud1/>
       <Hud2/>
       <SocialButtons/>
