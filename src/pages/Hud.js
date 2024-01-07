@@ -9,8 +9,6 @@ const Hud = () => {
 
   return (
     <>  
-     <div className='spinner'>
-     </div>
       <Hud1/>
       <Hud2/>
       <SocialButtons/>
