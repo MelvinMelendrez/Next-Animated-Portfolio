@@ -34,11 +34,10 @@ const CardsHud: React.FC = () => {
     {
       title: "food blog",
       subtitle: 'Vue',
-      image:
-        'https://cdn.sanity.io/images/ohx8wpby/production/beeb006981c79f72ad02ca581f1c5fb32f5dde8b-696x822.png',
+      image: 'https://cdn.sanity.io/images/ohx8wpby/production/7b7b5bf1fed4daee46fc41b258792bbfe9279617-1440x1714.jpg',
       color: '#F44336',
-      gitHub: 'https://github.com/MelvinMelendrez/melvin-s-portfolio',
-      visit: 'https://melvinapp.com'
+      gitHub: 'https://github.com/MelvinMelendrez/Vue-food-blog',
+      visit: 'https://vue-food-blog.vercel.app/'
     },
     // {
     //   title: 'Healty blog',

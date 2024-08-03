@@ -33,7 +33,6 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
         className="base-page-size"
       >
-        <title>Animated Portfolio</title>
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
