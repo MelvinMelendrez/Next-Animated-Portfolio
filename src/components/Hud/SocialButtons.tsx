@@ -32,7 +32,7 @@ const SocialButtons: React.FC = () => {
   const socialNetworks = [
     { name: 'LinkedIn', icon: 'https://cdn-icons-png.flaticon.com/512/174/174857.png', link: 'https://www.linkedin.com/in/melvinmelendrez/' },
     { name: 'Github', icon: 'https://cdn-icons-png.flaticon.com/512/733/733609.png', link: 'https://github.com/MelvinMelendrez' },
-    { name: 'Instagram', icon: 'https://cdn-icons-png.flaticon.com/512/174/174855.png', link: 'https://www.instagram.com/melvinmelendrez' },
+    // { name: 'Instagram', icon: 'https://cdn-icons-png.flaticon.com/512/174/174855.png', link: 'https://www.instagram.com/melvinmelendrez' },
   ];
 
   return (
