@@ -39,15 +39,15 @@ const CardsHud: React.FC = () => {
       gitHub: 'https://github.com/MelvinMelendrez/Vue-food-blog',
       visit: 'https://vue-food-blog.vercel.app/'
     },
-    // {
-    //   title: 'Healty blog',
-    //   subtitle: 'Next',
-    //   image:
-    //     'https://cdn.sanity.io/images/ohx8wpby/production/7f7a2f05037be61fb6538c0b96769b70fec544ed-1439x759.png',
-    //   color: '#FFC107',
-    //   gitHub: 'https://github.com/MelvinMelendrez/Blog.git',
-    //   visit:'https://blog-six-ivory.vercel.app/'
-    // },
+    {
+      title: 'Healty blog',
+      subtitle: 'Next',
+      image:
+        'https://cdn.sanity.io/images/ohx8wpby/production/7f7a2f05037be61fb6538c0b96769b70fec544ed-1439x759.png',
+      color: '#FFC107',
+      gitHub: 'https://github.com/MelvinMelendrez/Blog.git',
+      visit: 'https://blog-six-ivory.vercel.app/'
+    },
     // {
     //   title: 'Melvin portfolio',
     //   subtitle: 'React',
@@ -57,15 +57,15 @@ const CardsHud: React.FC = () => {
     //   gitHub: 'https://github.com/MelvinMelendrez/portfolio',
     //   visit: 'https://portfolio-git-main-krispis0.vercel.app/'
     // },
-    // {
-    //   title: 'Go Travel',
-    //   subtitle: 'React Native',
-    //   image:
-    //     'https://cdn.sanity.io/images/ohx8wpby/production/782022d291278a6c2de1ef15d35df30aaef7a5dc-370x1027.jpg',
-    //   color: '#4CAF50',
-    //   gitHub: 'https://github.com/MelvinMelendrez/Go-Travel.git',
-    //   visit:'https://cdn.sanity.io/images/ohx8wpby/production/9b2898a654a087fa109ff6ccbf6294de27c53636-702x1024.jpg'
-    // }
+    {
+      title: 'Go Travel',
+      subtitle: 'React Native',
+      image:
+        'https://cdn.sanity.io/images/ohx8wpby/production/782022d291278a6c2de1ef15d35df30aaef7a5dc-370x1027.jpg',
+      color: '#4CAF50',
+      gitHub: 'https://github.com/MelvinMelendrez/Go-Travel.git',
+      visit: 'https://cdn.sanity.io/images/ohx8wpby/production/9b2898a654a087fa109ff6ccbf6294de27c53636-702x1024.jpg'
+    }
   ];
 
   return (
